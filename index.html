@@ -1,263 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exclusive Rewards Marketplace</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    }
-
-    body {
-      background-color: #0d1117;
-      color: #f0f6fc;
-      padding: 20px 12px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .header {
-      text-align: center;
-      margin-bottom: 20px;
-      width: 100%;
-      max-width: 1100px;
-    }
-
-    .header h1 {
-      color: #00f2fe;
-      font-size: 26px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 6px;
-      text-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
-    }
-
-    .header p {
-      color: #8b949e;
-      font-size: 13px;
-    }
-
-    .stats-bar {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      max-width: 1100px;
-      background: #161b22;
-      border: 1px solid #30363d;
-      padding: 12px 8px;
-      border-radius: 12px;
-      margin-bottom: 25px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    }
-
-    .stat-item {
-      text-align: center;
-    }
-
-    .stat-item h3 {
-      color: #00f2fe;
-      font-size: 15px;
-      font-weight: 700;
-    }
-
-    .stat-item p {
-      color: #8b949e;
-      font-size: 11px;
-    }
-
-    .shop-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      width: 100%;
-      max-width: 1100px;
-    }
-
-    @media (min-width: 768px) {
-      .shop-container {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 18px;
-      }
-    }
-
-    .card {
-      background: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 12px;
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card:hover {
-      border-color: #00f2fe;
-      transform: translateY(-4px);
-      box-shadow: 0 8px 25px rgba(0, 242, 254, 0.25);
-    }
-
-    .badge {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      background: rgba(255, 75, 75, 0.9);
-      color: #fff;
-      font-size: 9px;
-      font-weight: bold;
-      padding: 3px 7px;
-      border-radius: 4px;
-      text-transform: uppercase;
-      z-index: 2;
-    }
-
-    .card img {
-      width: 100%;
-      height: 110px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 8px;
-    }
-
-    @media (min-width: 768px) {
-      .card img {
-        height: 130px;
-      }
-    }
-
-    .card-title {
-      font-size: 14px;
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 4px;
-      line-height: 1.3;
-    }
-
-    .card-desc {
-      font-size: 11px;
-      color: #8b949e;
-      margin-bottom: 8px;
-      line-height: 1.3;
-    }
-
-    .rating {
-      color: #ffb703;
-      font-size: 10px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 10px 0;
-      background: linear-gradient(135deg, #004e92, #000428);
-      border: 1px solid #00f2fe;
-      color: #00f2fe;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 12px;
-      border-radius: 6px;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      transition: all 0.3s ease;
-    }
-
-    .card:hover .btn {
-      background: linear-gradient(135deg, #00f2fe, #4facfe);
-      color: #000;
-      border-color: #00f2fe;
-      box-shadow: 0 0 12px rgba(0, 242, 254, 0.5);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বিশেষ অফার! ৫০০$ গিফট কার্ড জয়ী হন</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            max-width: 450px;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+        }
+        .badge {
+            background: #ff4757;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        h1 {
+            color: #2f3542;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #57606f;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .gift-box {
+            font-size: 70px;
+            margin: 10px 0;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-20px);}
+            60% {transform: translateY(-10px);}
+        }
+        .timer-box {
+            background: #f1f2f6;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            color: #ff4757;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .btn-claim {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(90deg, #2ed573, #26af5f);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(46, 213, 115, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn-claim:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(46, 213, 115, 0.6);
+        }
+        .footer-note {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #a4b0be;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="header">
-    <h1>REWARDS MARKETPLACE</h1>
-    <p>Select your favorite gift card and claim your reward instantly</p>
-  </div>
-
-  <div class="stats-bar">
-    <div class="stat-item">
-      <h3>18.4K+</h3>
-      <p>Claimed Today</p>
-    </div>
-    <div class="stat-item">
-      <h3>$3.8M</h3>
-      <p>Total Rewards</p>
-    </div>
-    <div class="stat-item">
-      <h3>99.2%</h3>
-      <p>Success Rate</p>
-    </div>
-  </div>
-
-  <div class="shop-container">
-
     <div class="card">
-      <span class="badge">HOT OFFER</span>
-      <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=500&auto=format&fit=crop" alt="PayPal" />
-      <div>
-        <div class="card-title">💳 PayPal $100 Card</div>
-        <div class="card-desc">Get instant $100 cash directly into your PayPal account.</div>
-      </div>
-      <div>
-        <div class="rating">★ 4.9 (2,410) • Verified</div>
-        <a href="Https://singingfiles.com/show.php?l=0&u=2550553&id=75095" class="btn" target="_blank">CLAIM $100</a>
-      </div>
+        <span class="badge">সীমিত সময়ের অফার</span>
+        <div class="gift-box">🎁</div>
+        <h1>অভিনন্দন! আপনি নির্বাচিত হয়েছেন</h1>
+        <p>এখনই নিচের বাটনে ক্লিক করে আপনার <strong>$500 Gift Card</strong> দাবি (Claim) করুন। অফারটি শেষ হওয়ার আগেই আপনার উপহারটি বুঝে নিন!</p>
+        
+        <div class="timer-box">
+            অফারের সময় বাকি: <span id="timer">05:00</span> মিনিট
+        </div>
+
+        <!-- আপনার নির্দিষ্ট রিডাইরেক্ট লিঙ্কটি এখানে যুক্ত করা আছে -->
+        <a href="https://www.profitableratecpmnetwork.com/cmi3xvw0a?key=b1ebdc9da83aafb03beb49efe4af9ac0" class="btn-claim" target="_blank">
+            👉 CLAIM YOUR GIFT CARD NOW
+        </a>
+
+        <div class="footer-note">
+            * কোনো প্রকার ফি ছাড়াই ফ্রিতে ক্লেইম করুন। শর্তাবলী প্রযোজ্য।
+        </div>
     </div>
 
-    <div class="card">
-      <span class="badge">INSTANT</span>
-      <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&auto=format&fit=crop" alt="Cash App" />
-      <div>
-        <div class="card-title">💵 Cash App $100</div>
-        <div class="card-desc">Direct cash approval instantly to your Cash App balance.</div>
-      </div>
-      <div>
-        <div class="rating">★ 4.8 (1,890) • Fast Delivery</div>
-        <a href="https://singingfiles.com/show.php?l=0&u=2550553&id=75092" class="btn" target="_blank">GET $100</a>
-      </div>
-    </div>
+    <script>
+        // ৫ মিনিটের কাউন্টডাউন টাইমার
+        let duration = 300;
+        const timerDisplay = document.getElementById('timer');
 
-    <div class="card">
-      <span class="badge">POPULAR</span>
-      <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=500&auto=format&fit=crop" alt="Amazon" />
-      <div>
-        <div class="card-title">🛒 Amazon $50 Voucher</div>
-        <div class="card-desc">Claim your free Amazon shopping code & buy anything.</div>
-      </div>
-      <div>
-        <div class="rating">★ 4.9 (3,120) • Top Rated</div>
-        <a href="https://singingfiles.com/show.php?l=0&u=2550553&id=72846" class="btn" target="_blank">CLAIM $50</a>
-      </div>
-    </div>
+        const countdown = setInterval(() => {
+            let minutes = Math.floor(duration / 60);
+            let seconds = duration % 60;
 
-    <div class="card">
-      <span class="badge">LIMITED</span>
-      <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=500&auto=format&fit=crop" alt="Walmart" />
-      <div>
-        <div class="card-title">🛍️ Walmart $50 Card</div>
-        <div class="card-desc">Free store gift card valid for online and in-store items.</div>
-      </div>
-      <div>
-        <div class="rating">★ 4.7 (950) • Limited Stock</div>
-        <a href="https://singingfiles.com/show.php?l=0&u=2550553&id=74437" class="btn" target="_blank">CLAIM $50</a>
-      </div>
-    </div>
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
 
-  </div>
+            timerDisplay.textContent = `${minutes}:${seconds}`;
+
+            if (--duration < 0) {
+                clearInterval(countdown);
+                timerDisplay.textContent = "সময় শেষ!";
+            }
+        }, 1000);
+    </script>
 
 </body>
 </html>
+
